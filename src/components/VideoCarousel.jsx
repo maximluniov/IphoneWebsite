@@ -5,6 +5,10 @@ import { playImg, replayImg, pauseImg } from '../utils'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
+import { ScrollTrigger } from "gsap/all"
+
+gsap.registerPlugin(ScrollTrigger)
+
 const VideoCarousel = () => {
     const videoRef = useRef([])
     const videoSpanRef = useRef([])
